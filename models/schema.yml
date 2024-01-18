@@ -11,6 +11,15 @@ sources:
             description: Clothing model name
       - name: cc_sales
         description: Product sales
-#        tests:
-#            - unique:
-#              column_name: "(product_id || '-' || date_date)"
+        tests:
+            - unique:
+                column_name: "(product_id || '-' || date_date)"
+
+models:
+  - name: stg_DBT_test__cc_stock
+    description: cleaned stock
+    tests:
+      - unique:
+          column_name: product_id
+  - name: stg_DBT_test__cc_sales
+    description: cleaned sales
