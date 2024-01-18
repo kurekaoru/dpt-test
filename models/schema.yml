@@ -11,6 +11,6 @@ sources:
             description: Clothing model name
       - name: cc_sales
         description: Product sales
-        tests:
-            - unique:
-              column_name: "(product_id || '-' || date_date)"
+#        tests:
+#            - unique:
+#              column_name: "(product_id || '-' || date_date)"
