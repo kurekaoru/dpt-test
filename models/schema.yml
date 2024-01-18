@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: DBT_test
+    description: raw data circle sportsware
+    tables : 
+      - name: cc_stock
+        description: Products stocks
+        columns:
+          - name: model
+            description: Clothing model name
+      - name: cc_sales
+        description: Product sales
+        tests:
+            - unique:
+              column_name: "(product_id || '-' || date_date)"
