@@ -25,3 +25,5 @@ models:
     description: cleaned sales
   - name: int_stock_sales
     description: Joined stocks and sales table by column product_id
+
+#Test
